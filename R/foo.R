@@ -1,6 +1,6 @@
 foo <-
-function() {
+function(value) {
 
-	return (3+5)
+	return (3+value)
 
 }

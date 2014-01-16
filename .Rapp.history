@@ -1,0 +1,381 @@
+12/365
+12/365*48
+12*48
+N<- 14500#
+e<- 0.05#
+p<- 0.5#
+Z <- 1.96#
+get.SampleSize <- function(N, Z, p,  e){#
+	n<- (#
+			Z^2 * p * (1-p)) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p)) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+get.SampleSize(N,Z,p),e)
+N<- 14500#
+e<- 0.05#
+p<- 0.5#
+Z <- 1.96
+get.SampleSize <- function(N, Z, p,  e){#
+	n<- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}
+get.SampleSize(N,Z,p,e)
+N<- 14500#
+e<- 0.03#
+p<- 0.5#
+Z <- 1.96#
+get.SampleSize <- function(N, Z, p,  e){#
+	n<- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+get.SampleSize(N,Z,p,e)
+N<- 14500#
+e<- 0.04#
+p<- 0.5#
+Z <- 1.96#
+get.SampleSize <- function(N, Z, p,  e){#
+	n<- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+get.SampleSize(N,Z,p,e)
+Based on formula by #
+# Cochran, W. G. 1963. Sampling Techniques, 2nd Ed., New York: John Wiley and Sons, Inc.#
+#
+# see also http://statistikberatung.blogspot.de/2008/03/samplesizer-kostenloses-tool-zur.html#
+#
+get.SampleSize <- function(N, Z, p,  e){#
+	n<- (l#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+N<- 14500 	# Elemente in Grundgesamtheit#
+e<- 0.04	# Konfidenzniveau#
+p<- 0.5		# Fehlerwahrscheinlichkeit#
+Z <- 1.96	# Z-Wert d. Normalverteilung#
+get.SampleSize(N,Z,p,e)#
+# 576#
+e<- 0.05	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+#
+e<- 0.01	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)
+Based on formula by #
+# Cochran, W. G. 1963. Sampling Techniques, 2nd Ed., New York: John Wiley and Sons, Inc.#
+#
+# see also http://statistikberatung.blogspot.de/2008/03/samplesizer-kostenloses-tool-zur.html#
+#
+get.SampleSize <- function(N, Z, p,  e){#
+	n <- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+N<- 14500 	# Elemente in Grundgesamtheit#
+e<- 0.04	# Konfidenzniveau#
+p<- 0.5		# Fehlerwahrscheinlichkeit#
+Z <- 1.96	# Z-Wert d. Normalverteilung#
+get.SampleSize(N,Z,p,e)#
+# 576#
+e<- 0.05	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+#
+e<- 0.01	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)
+sample(1:576, 30)
+x<-sample(1:576, 30)
+order(x)
+x[order(x)]
+set.seed(0)
+x<-sample(1:576, 30)
+x[order(x)]
+get.ReliabilitätsSample<-function(n , min , max , seed ){#
+	set.seed(seed)				# Wähle eine bestimmte Zufallszahlenliste aus --> Für Reproduzierbarkeit#
+	x<-sample(min:max, n)	# Ziehe eine Stichproben von n Elementen#
+	return (x[order(x)])	# gib eine sortierte Liste zurück#
+}#
+#
+n = 30#
+min = 1#
+max = 576#
+seed = 0#
+#
+get.ReliabilitätsSample(n,min,max,seed)
+Based on formula by #
+# Cochran, W. G. 1963. Sampling Techniques, 2nd Ed., New York: John Wiley and Sons, Inc.#
+#
+# see also http://statistikberatung.blogspot.de/2008/03/samplesizer-kostenloses-tool-zur.html#
+#
+get.SampleSize <- function(N, Z, p,  e){#
+	n <- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+N<- 14500 	# Elemente in Grundgesamtheit#
+e<- 0.04	# Konfidenzniveau#
+p<- 0.5		# Fehlerwahrscheinlichkeit#
+Z <- 1.96	# Z-Wert d. Normalverteilung#
+get.SampleSize(N,Z,p,e)#
+# 576#
+e<- 0.05	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+#
+e<- 0.01	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+N<- 15024 #
+e<- 0.01	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)
+Based on formula by #
+# Cochran, W. G. 1963. Sampling Techniques, 2nd Ed., New York: John Wiley and Sons, Inc.#
+#
+# see also http://statistikberatung.blogspot.de/2008/03/samplesizer-kostenloses-tool-zur.html#
+#
+get.SampleSize <- function(N, Z, p,  e){#
+	n <- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+N<- 14500 	# Elemente in Grundgesamtheit#
+e<- 0.04	# Konfidenzniveau#
+p<- 0.5		# Fehlerwahrscheinlichkeit#
+Z <- 1.96	# Z-Wert d. Normalverteilung#
+get.SampleSize(N,Z,p,e)#
+# 576#
+e<- 0.05	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+#
+e<- 0.01	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+N<- 15024 #
+e<- 0.04	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)
+Based on formula by #
+# Cochran, W. G. 1963. Sampling Techniques, 2nd Ed., New York: John Wiley and Sons, Inc.#
+#
+# see also http://statistikberatung.blogspot.de/2008/03/samplesizer-kostenloses-tool-zur.html#
+#
+get.SampleSize <- function(N, Z, p,  e){#
+	n <- (#
+			Z^2 * p * (1-p) / e^2#
+		) / #
+		(#
+			1 + (#
+					Z^2 * p * (1-p) / e^2 -1#
+				) / N#
+		)#
+	return(n)#
+}#
+#
+N<- 14500 	# Elemente in Grundgesamtheit#
+e<- 0.04	# Konfidenzniveau#
+p<- 0.5		# Fehlerwahrscheinlichkeit#
+Z <- 1.96	# Z-Wert d. Normalverteilung#
+get.SampleSize(N,Z,p,e)#
+# 576#
+e<- 0.05	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+#
+e<- 0.01	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)#
+N<- 15024 #
+e<- 0.0378	# Konfidenzniveau#
+get.SampleSize(N,Z,p,e)
+get.ReliabilitätsSample<-function(n , min , max , seed ){#
+	set.seed(seed)				# Wähle eine bestimmte Zufallszahlenliste aus --> Für Reproduzierbarkeit#
+	x<-sample(min:max, n)	# Ziehe eine Stichproben von n Elementen#
+	return (x[order(x)])	# gib eine sortierte Liste zurück#
+}#
+#
+n = 30#
+min = 1#
+max = 576#
+seed = 0#
+#
+get.ReliabilitätsSample(n,min,)#
+#
+# Ergebnisse#
+#   8  35  70 100 116 117 118 148 153 210 212 213 214 216 279 329 357#
+# 361 376 387 402 432 433 476 513 517 519 520 538 554#
+#
+max = 584 #
+#
+get.ReliabilitätsSample(n,min,)
+get.ReliabilitätsSample<-function(n , min , max , seed ){#
+	set.seed(seed)				# Wähle eine bestimmte Zufallszahlenliste aus --> Für Reproduzierbarkeit#
+	x<-sample(min:max, n)	# Ziehe eine Stichproben von n Elementen#
+	return (x[order(x)])	# gib eine sortierte Liste zurück#
+}#
+#
+n = 30#
+min = 1#
+max = 576#
+seed = 0#
+#
+get.ReliabilitätsSample(n,min,seed)#
+#
+# Ergebnisse#
+#   8  35  70 100 116 117 118 148 153 210 212 213 214 216 279 329 357#
+# 361 376 387 402 432 433 476 513 517 519 520 538 554#
+#
+max = 584 #
+#
+get.ReliabilitätsSample(n,min,seed)
+get.ReliabilitätsSample<-function(n , min , max , seed ){#
+	set.seed(seed)				# Wähle eine bestimmte Zufallszahlenliste aus --> Für Reproduzierbarkeit#
+	x<-sample(min:max, n)	# Ziehe eine Stichproben von n Elementen#
+	return (x[order(x)])	# gib eine sortierte Liste zurück#
+}#
+#
+n <- 30#
+min <- 1#
+max <- 576#
+seed <- 0#
+#
+get.ReliabilitätsSample(n,min,seed)#
+#
+# Ergebnisse#
+#   8  35  70 100 116 117 118 148 153 210 212 213 214 216 279 329 357#
+# 361 376 387 402 432 433 476 513 517 519 520 538 554#
+#
+max <- 584 #
+#
+get.ReliabilitätsSample(n,min,seed)
+sample(1:49,6)
+get.ReliabilitätsSample<-function(n , min , max , seed ){#
+	set.seed(seed)				# Wähle eine bestimmte Zufallszahlenliste aus --> Für Reproduzierbarkeit#
+	x<-sample(min:max, n)	# Ziehe eine Stichproben von n Elementen#
+	return (x[order(x)])	# gib eine sortierte Liste zurück#
+}#
+#
+n <- 30#
+min <- 1#
+max <- 576#
+seed <- 0#
+#
+get.ReliabilitätsSample(n,max,min,seed)#
+#
+# Ergebnisse#
+#   8  35  70 100 116 117 118 148 153 210 212 213 214 216 279 329 357#
+# 361 376 387 402 432 433 476 513 517 519 520 538 554#
+#
+max <- 584 #
+#
+get.ReliabilitätsSample(n,max,min,seed)
+sample(1:49,6)
+setwd("/Volumes/Daten/FelixLindemann/Documents/git/RDemo")
+package.skeleton(name="RDemo")
+package.skeleton("RDemo")
+package.skeleton()
+foo <- function() {}
+package.skeleton("RDemo")
+setwd("/Volumes/Daten/FelixLindemann/Documents/git")#
+foo <- function() {#
+	return 3+4#
+} #
+#
+package.skeleton("RDemo")
+library(devtools)#
+install_github("RDemo", "felixlindemann")
+install(devtools)
+library(devtools)#
+install_github("RDemo", "felixlindemann")
+library(devtools)#
+install_github("RDemo", "felixlindemann")
+getwd()
+setwd("/Volumes/Daten/FelixLindemann/Documents/git/RDemo")
+getwd()
+load_all()
+install()
+install()
+load_all()
+install()
+load_all()
+install()
+?foo
+install_github("RDemo", "felixlindemann")
+foo()
+getwd()
+install_all()
+installall()
+load_all()
+load_all()
+foo()
+foo <-#
+function() {#
+#
+	return (3+4)#
+#
+}
+foo
+foo()
+load_all()
+foo
+foo()
+install_github("RDemo", "felixlindemann")
+foo()
+library(RDemo)
+foo()
+install_github("RDemo", "felixlindemann")
+library(RDemo)
+foo()
+?install_github
+install_github("RDemo", "felixlindemann",reload = TRUE, quick=FALSE)
+foo
+library(RDemo)
+foo
