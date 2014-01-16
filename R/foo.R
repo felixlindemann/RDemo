@@ -1,2 +1,6 @@
 foo <-
-function() {}
+function() {
+
+	return (3+4)
+
+}

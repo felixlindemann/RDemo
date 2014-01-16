@@ -5,3 +5,9 @@ foo <- function() {
 } 
 
 package.skeleton("RDemo")
+
+
+#
+library(devtools)
+install_github("RDemo", "felixlindemann") 
+#
